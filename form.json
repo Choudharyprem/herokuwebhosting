@@ -1,0 +1,15 @@
+{
+    "firstname":"prem",
+    "lastname":"choudhary",
+    "mobileno":"9799871773",
+    "email":"helloworld@gmail.com",
+    "password":"helloworld",
+    "aaddress":{
+      "street":"B12",
+      "City":"Jaipur",
+      "State":"Rajasthan",
+      "Country":"India"
+    },
+      "Loginid":"premchand"
+    
+ }
