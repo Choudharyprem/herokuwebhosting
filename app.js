@@ -4,7 +4,7 @@ var app = express();
 var bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
-// const port=process.env.PORT||8000;
+const port=process.env.PORT||8000;
 app.use(express.static('resources'));
  
 global.__basedir = __dirname;
@@ -27,15 +27,15 @@ mongoose.connect(dbConfig.url)
 require('./app/routes/user.route.js')(app);
  
 // Create a Server
-var server = app.listen(8081, function () {
+// var server = app.listen(8081, function () {
  
-  var host = server.address().address
-  var port = server.address().port
+//   var host = server.address().address
+//   var port = server.address().port
  
-  console.log("App listening at http://%s:%s", host, port)
+//   console.log("App listening at http://%s:%s", host, port)
  
-})
-// app.listen(port,()=>{
-  
-//   console.log(`listening to the port no at ${port}`)
 // })
+app.listen(port,()=>{
+  
+  console.log(`listening to the port no at ${port}`)
+})
